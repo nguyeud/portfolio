@@ -1,5 +1,4 @@
 html {
-    /* font-family: 'Poppins', sans-serif; */
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     font-size: 12px;
@@ -24,7 +23,7 @@ main {
     width: 100%;
 }
 section {
-    width: 40rem;
+    width: 36rem;
     margin:auto;
 }
 
@@ -42,17 +41,36 @@ ul {
     padding: 0;
 }
 
+/* ICONS */
+i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.icon-btn {
+    font-size: .6rem;
+    position: relative;
+    top: -1px;
+}
+
 /* TYPOGRAPHY */
 #nav-left-side > a {
-    font-family: 'Righteous', cursive;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.6rem;
+    font-weight: 800;
     color: #fff;
     letter-spacing: 0.15rem;;
 }
 .nav-link > a {
     color: #fff;
-    font-size: 1rem;;
+    font-size: 1rem;
     font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .5s; /* fade in */
+}
+.nav-link > a:hover {
+    border-bottom: 2px solid #b6cecc;
 }
 
 /* NAV */
@@ -66,12 +84,35 @@ ul {
 #nav-logo {
     width: 1.6rem;
     position: relative;
-    top: 1px;
-    right: -2px;
+    top: 2px;
+    right: -1px;
 }
 #nav-links {
     display: flex;
     gap: 2rem;
+}
+
+/* BUTTON */
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: rgb(32, 32, 35);
+    background-color: #ffe066;
+    border: none;
+}
+.btn:hover {
+    
+}
+.btn-medium {
+    font-size: 1rem;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 3px
+}
+.btn-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* UTILITIES */
@@ -83,4 +124,4 @@ ul {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);    
-  }
+}
