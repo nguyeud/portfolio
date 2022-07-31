@@ -1,12 +1,16 @@
 /* TYPOGRAPHY */
+.bold-text {
+    font-weight: 500;
+    color: rgb(191, 217, 255);
+}
 .section-header {
     font-family: 'Nunito', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    border-bottom: 2px solid rgb(249, 213, 255);;
+    border-bottom: 2px solid rgb(249, 213, 255);
 }
 .section-text {
-
+    text-align: justify;
 }
 
 /* INTRO */
@@ -14,7 +18,6 @@
     background-image: url(images/intro.png);
     background-repeat: no-repeat;
     background-position: center;
-    /* background-size: cover; */
     background-size: 100% auto;
     height: 380px;
 }
@@ -31,10 +34,28 @@
     font-size: 5.5rem;
     font-weight: 600;
     text-align: center;
-    background-color:rgb(249, 213, 255, .5);
+    background-color:rgb(191, 217, 255, .5);
     border-radius: 1rem;
 }
 
 /* ABOUT */
+#main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+}
+#main-left-side {
+    width: 70%;
+}
+#main-right-side {
+    width: 30%;
+}
+#main-img {
+    width: 90%;
+    border-radius: 50%;
+    border: 2px solid rgb(191, 217, 255);
+}
 
-/* CONTACT */
+/* EXPERIENCE */
