@@ -32,6 +32,9 @@ section {
     width: 40rem;
     margin-bottom: 2rem;
 }
+footer {
+    
+}
 
 /* LINKS */
 a {
@@ -45,11 +48,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-/* ICONS */
-.icon-btn {
-    font-size: .8rem;
 }
 
 /* IMAGES */
@@ -92,6 +90,34 @@ p {
 #nav-links {
     display: flex;
     gap: 2rem;
+}
+
+/* FOOTER */
+#footer-line {
+    height: 10rem;
+    width: 2px;
+    background-color: rgb(249, 213, 255);
+    position: fixed;
+    bottom: 0;
+    left: 10rem;
+}
+.footer-icon {
+    font-size: 1.5rem;
+    color: rgb(249, 213, 255);
+    transition: color .5s; /* fade in */
+}
+.footer-icon:hover {
+    color: rgb(249, 213, 255, .25);
+}
+#github {
+    position: fixed;
+    bottom: 11rem;
+    left: 9.4rem;
+}
+#linkedin {
+    position: fixed;
+    bottom: 14rem;
+    left: 9.5rem;
 }
 
 /* BUTTONS */
