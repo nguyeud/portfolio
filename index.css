@@ -107,7 +107,7 @@
     color: rgb(191, 217, 255);
     background-color: rgb(191, 217, 255, .25);
 }
-#experience-where > ul > li:hover {
+.experience-link:hover {
     color: rgb(191, 217, 255);
     background-color: rgb(191, 217, 255, .25);
     transition: background-color .5s; /* fade in */
