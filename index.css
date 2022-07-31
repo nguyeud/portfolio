@@ -1,18 +1,15 @@
-html {
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    font-size: 12px;
-}
-
 /* TYPOGRAPHY */
 .section-header {
     font-family: 'Nunito', sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
-    border-bottom: 2px solid #b6cecc;
+    border-bottom: 2px solid rgb(249, 213, 255);;
+}
+.section-text {
+    
 }
 
 /* INTRO */
 #intro-img {
-    width: 50%;
+    width: 100%;
 }
