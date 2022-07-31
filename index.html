@@ -41,10 +41,10 @@
             <a class="nav-link" href="#main-about">About</a>
           </div>
           <div class="nav-links">
-            <a class="nav-link" href="#">Experience</a>
+            <a class="nav-link" href="#main-experience">Experience</a>
           </div>
           <div class="nav-links">
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="#main-portfolio">Portfolio</a>
           </div>
           <div class="nav-links">
             <a class="nav-link" href="#main-contact">Contact</a>
@@ -54,6 +54,8 @@
     </nav>
     <main>
       <section id="main-intro">
+        <img id="intro-img-left" src="images/intro-3.png">
+        <img id="intro-img-right" src="images/intro-4.png">
         <div id="intro-container">
           <p>Hi, my name is</p>
           <div id="intro-name">Uyên Nguyễn</div>
@@ -68,11 +70,12 @@
       </section>
       <section id="main-about">
         <div class="section-header">About</div>
-        <div id="main-container">
-          <div id="main-left-side">
+        <div id="about-container">
+          <div id="about-left-side">
             <p class="section-text">
-              Hello! My name is <span class="bold-text">Uyen (Wing, she/hers)</span> and I enjoy developing
-              solutions to problems through technology. In efforts of
+              Hello! My name is
+              <span class="bold-text">Uyen (Wing, she/hers)</span> and I enjoy
+              developing solutions to problems through technology. In efforts of
               transitioning my career and forward, I have been self-learning the
               basics of software development for the past year to build my base
               knowledge of algorithms, data structures, and web development
@@ -82,24 +85,36 @@
               mastery, and work with like-minded and talented individuals.
             </p>
           </div>
-          <div id="main-right-side">
+          <div id="about-right-side">
             <p class="section-text">
-                <img id="main-img" src="images/pfp.png" />
+              <img id="about-img" src="images/pfp.png" />
             </p>
           </div>
         </div>
       </section>
       <section id="main-experience">
         <div class="section-header">Experience</div>
-        <div id="experience-where">
-          <ul>
-            <li>Procter & Gamble</li>
-            <li>Medtronic</li>
-            <li>Rolls-Royce Solutions America</li>
-            <li>University of Michigan</li>
-          </ul>
+        <div id="experience-container">
+          <div id="experience-where">
+            <ul>
+              <li class="border-show border-active" id="pg">Procter & Gamble</li>
+              <li class="border-show" id="med">Medtronic</li>
+              <li class="border-show" id="rr">Rolls-Royce Solutions</li>
+              <li class="border-show" id="umich">University of Michigan</li>
+            </ul>
+          </div>
+          <div id="experience-info">
+            <p id="experience-header">Engineer <span class="bold-text">@ Procter & Gamble</span></p>
+            <p id="experience-date">Jan 2020 - Present</p>
+            <div id="experience-text">
+                <ul>
+                    <li class="show-bullet">Delivered global-benchmark-level process reliability (PR) and runtime efficiency (RE) on Lima Plant’s highest throughput production line of Tide PODS and Gain Flings</li>
+                    <li class="show-bullet">Sustained < 6% unplanned downtime while leveraging planned initiative investments into supply chain agility to meet record production demands during COVID-19</li>
+                    <li class="show-bullet">Led strategic site-level savings projects as Service and Equipment (S&E) cost element owner for Lima SUD driving > $44M reduction in material and service losses in FY21</li>
+                </ul>
+            </div>
+          </div>
         </div>
-        <div id="experience-info"></div>
       </section>
       <section id="main-portfolio">
         <div class="section-header">Portfolio</div>
@@ -107,7 +122,10 @@
       <section id="main-contact">
         <div class="section-header">Contact</div>
         <p class="section-text">
-          I am looking for <span class="bold-text">junior software engineering roles or apprenticeships</span>
+          I am looking for
+          <span class="bold-text"
+            >junior software engineering roles or apprenticeships</span
+          >
           in either front-end or back-end development.
         </p>
         <p class="section-text">

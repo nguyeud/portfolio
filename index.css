@@ -8,26 +8,35 @@
     font-size: 1.4rem;
     font-weight: 700;
     border-bottom: 2px solid rgb(249, 213, 255);
+    margin-bottom: 1rem;
 }
 .section-text {
     text-align: justify;
+    margin-bottom: .5rem;
 }
 
 /* INTRO */
-#main-intro {
-    background-image: url(images/intro.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% auto;
-    height: 380px;
+#intro-img-left {
+    width: 40rem;
+    position: fixed;
+    left: 0;
+    opacity: .25;
+}
+#intro-img-right {
+    width: 40rem;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    opacity: .25;
 }
 #intro-container {
     height: 100%;
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 1rem;
 }
 #intro-name {
     font-family: 'Nunito', sans-serif;
@@ -39,28 +48,72 @@
 }
 
 /* ABOUT */
-#main-container {
+#about-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     gap: 3rem;
 }
-#main-left-side {
+#about-left-side {
     width: 70%;
 }
-#main-right-side {
+#about-right-side {
     width: 30%;
 }
-#main-img {
+#about-img {
     width: 90%;
     border-radius: 50%;
     border: 2px solid rgb(191, 217, 255);
 }
 
 /* EXPERIENCE */
+#experience-container {
+    display: flex;
+    gap: 1rem;
+}
+#experience-where {
+    width: 30%;
+}
+#experience-where > ul > li {
+    padding: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: .9rem;
+    cursor: pointer;
+}
+#experience-info {
+    width: 70%;
+}
+#experience-header {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+}
+#experience-date {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: .5rem;
+}
+.show-bullet {
+    list-style-type: disc;
+    margin-left: 1rem;
+    padding: .25rem .25rem;
+}
+/* Pagination */
+.border-show {
+    border-left: 2px solid #444;
+}
+.border-active {
+    border-left: 2px solid rgb(191, 217, 255);
+    color: rgb(191, 217, 255);
+    background-color: rgb(191, 217, 255, .25);
+}
+#experience-where > ul > li:hover {
+    color: rgb(191, 217, 255);
+    background-color: rgb(191, 217, 255, .25);
+    transition: background-color .5s; /* fade in */
+}
 
 /* CONTACT */
 .btn-medium {
-    margin: auto;
+    margin: 2rem auto;
 }
