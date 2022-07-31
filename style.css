@@ -119,6 +119,17 @@ p {
     bottom: 14rem;
     left: 9.5rem;
 }
+#footer-credits {
+    position: fixed;
+    bottom: 1rem;
+    left: 12rem;
+}
+.footer-credit {
+    font-size: 0.8rem;
+}
+.footer-credit > a {
+    color: rgb(249, 213, 255);;
+}
 
 /* BUTTONS */
 .btn {
