@@ -76,3 +76,13 @@ workPage.forEach((work) => {
     }
   });
 });
+
+window.addEventListener('load', (event) => {
+    // load first work place pagination
+    let spanDetail = `<span id="experience-place" class="bold-text">@ ${workLibrary[0]["work"]}</span>`;
+    workRole.innerText = workLibrary[0]["role"];
+    workRole.insertAdjacentHTML("beforeend", spanDetail);
+    workDate.innerText = workLibrary[0]["date"];
+    let details = workLibrary[0]["detail"];
+    createWorkDetails(details);
+});
