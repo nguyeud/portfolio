@@ -1,15 +1,41 @@
 /* TYPOGRAPHY */
+section > p {
+    padding: .5rem;
+}
 .section-header {
     font-family: 'Nunito', sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
     border-bottom: 2px solid rgb(249, 213, 255);;
 }
-.section-text {
-    
-}
+/* .section-text {
+
+} */
 
 /* INTRO */
-#intro-img {
-    width: 100%;
+#main-intro {
+    background-image: url(images/intro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+    background-size: 100% auto;
+    height: 326px;
 }
+#intro-container {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#intro-name {
+    font-family: 'Nunito', sans-serif;
+    font-size: 5.5rem;
+    font-weight: 600;
+    text-align: center;
+    background-color:rgb(249, 213, 255, .5);
+    border-radius: 1rem;
+}
+
+/* ABOUT */
