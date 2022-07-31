@@ -55,6 +55,7 @@ function createWorkDetails(details) {
     })
 }
 
+// event listener for clicking on each work place pagination
 workPage.forEach((work) => {
   work.addEventListener("click", (e) => {
     let target = e.target;
