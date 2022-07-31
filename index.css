@@ -1,16 +1,13 @@
 /* TYPOGRAPHY */
-section > p {
-    padding: .5rem;
-}
 .section-header {
     font-family: 'Nunito', sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
     border-bottom: 2px solid rgb(249, 213, 255);;
 }
-/* .section-text {
+.section-text {
 
-} */
+}
 
 /* INTRO */
 #main-intro {

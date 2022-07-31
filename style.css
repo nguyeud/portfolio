@@ -103,12 +103,17 @@ ul {
 }
 .btn-icon {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: .5rem;
 }
-.btn-small {
+.img-in-btn {
+    width: 1.5rem;
+    height: auto;
+}
+.btn-medium {
     font-size: 1rem;
-    width: 6rem;
+    width: 8rem;
     height: 3rem;
     border-radius: .5rem;
 }
