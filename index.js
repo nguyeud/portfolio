@@ -99,34 +99,39 @@ workPage.forEach((work) => {
 const portfolioContainer = document.getElementById("portfolio-container");
 const portfolioLibrary = [
   {
-    image: "/images/spark.png",
+    image: "/images/rps.png",
     title: "Rock, Paper, Scissors",
     detail: "A 5 round game against the computer.",
-    tech: "HTML, CSS, JavaScript"
+    tech: "HTML, CSS, JavaScript",
+    github: "https://nguyeud.github.io/rock-paper-scissor-game/",
   },
   {
-    image: "/images/spark.png",
+    image: "/images/etch-a-sketch.png",
     title: "Etch-a-Sketch",
     detail: "An online etch-a-sketch to draw on.",
-    tech: "HTML, CSS, JavaScript, jQuery"
+    tech: "HTML, CSS, JavaScript, jQuery",
+    github: "https://nguyeud.github.io/etch-a-sketch-app/",
   },
   {
-    image: "/images/spark.png",
+    image: "/images/calculator.png",
     title: "Calculator",
     detail: "A simple calculator.",
-    tech: "HTML, CSS, JavaScript, jQuery"
+    tech: "HTML, CSS, JavaScript, jQuery",
+    github: "https://nguyeud.github.io/calculator-app/",
   },
   {
-    image: "/images/spark.png",
+    image: "/images/sign-up-form.png",
     title: "Sign-up Form",
     detail: "A dummy sign-up form with validation.",
-    tech: "HTML, CSS, JavaScript, Bootstrap"
+    tech: "HTML, CSS, JavaScript, Bootstrap",
+    github: "https://nguyeud.github.io/sign-up-form/",
   },
   {
-    image: "/images/spark.png",
-    title: "Library",
+    image: "/images/library.png",
+    title: "Library (WIP)",
     detail: "Add and track books in this library application to your local storage.",
-    tech: "HTML, CSS, JavaScript, Bootstrap"
+    tech: "HTML, CSS, JavaScript, Bootstrap",
+    github: "https://nguyeud.github.io/library-app/",
   }
 ]
 
@@ -138,14 +143,14 @@ function createPortfolioProjects() {
       <div class="portfolio-photo">
         <img class="portfolio-img" src=${portfolioLibrary[i]["image"]}>
       </div>
-      <div class="portfolio-title">
+      <div class="portfolio-title bold-text">
         ${portfolioLibrary[i]["title"]}
       </div>
       <div class="portfolio-text">
         ${portfolioLibrary[i]["detail"]}
       </div>
-      <div class="portfolio-tech">
-        ${portfolioLibrary[i]["tech"]}
+      <div class="portfolio-tech tech-stack">
+        ${portfolioLibrary[i]["tech"]} (<a class="portfolio-link" href=${portfolioLibrary[i]["github"]}>GitHub<a>)
       </div>
     </div>`;
     portfolioContainer.insertAdjacentHTML("afterbegin", portfolioHTML);

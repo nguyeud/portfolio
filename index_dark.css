@@ -14,6 +14,9 @@
     text-align: justify;
     margin-bottom: .5rem;
 }
+a {
+    color: rgb(249, 213, 255);
+}
 
 /* INTRO */
 #intro-img-left {
@@ -111,6 +114,29 @@
     color: rgb(191, 217, 255);
     background-color: rgb(191, 217, 255, .25);
     transition: background-color .5s; /* fade in */
+}
+
+/* PORTFOLIO */
+#portfolio-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.portfolio {
+    width: 45%;
+    background-color: rgb(136, 136, 136, .1);
+    padding: .5rem;
+    border-radius: .5rem;
+}
+.portfolio-img {
+    width: 100%;
+    height: auto;
+}
+.tech-stack {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: .5rem;
 }
 
 /* CONTACT */
