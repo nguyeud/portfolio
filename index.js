@@ -2,19 +2,18 @@
 const commonStyle = document.getElementById("common-style");
 const indexStyle = document.getElementById("index-style");
 const btnMode = document.getElementById("btn-darkToLight");
+const logo = document.getElementById("nav-img");
 
 btnMode.addEventListener("click", (e) => {
   if(e.target.innerHTML == '<i class="fi fi-br-sun"></i>') {
     commonStyle.href = "style_light.css";
     indexStyle.href = "index_light.css";
-    console.log(commonStyle);
-    console.log(indexStyle);
+    logo.src = "images/logo_black.png";
     e.target.innerHTML = '<i class="fi fi-rr-moon-stars"></i>';
   } else if(e.target.innerHTML == '<i class="fi fi-rr-moon-stars"></i>') {
     commonStyle.href = "style_dark.css";
     indexStyle.href = "index_dark.css";
-    console.log(commonStyle);
-    console.log(indexStyle);
+    logo.src = "images/logo_white.png";
     e.target.innerHTML = '<i class="fi fi-br-sun"></i>';
   }
 })
