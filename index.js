@@ -99,35 +99,35 @@ workPage.forEach((work) => {
 const portfolioContainer = document.getElementById("portfolio-container");
 const portfolioLibrary = [
   {
-    image: "/images/rps.png",
+    image: "images/rps.png",
     title: "Rock, Paper, Scissors",
     detail: "A 5 round game against the computer.",
     tech: "HTML, CSS, JavaScript",
     github: "https://nguyeud.github.io/rock-paper-scissor-game/",
   },
   {
-    image: "/images/etch-a-sketch.png",
+    image: "images/etch-a-sketch.png",
     title: "Etch-a-Sketch",
     detail: "An online etch-a-sketch to draw on.",
     tech: "HTML, CSS, JavaScript, jQuery",
     github: "https://nguyeud.github.io/etch-a-sketch-app/",
   },
   {
-    image: "/images/calculator.png",
+    image: "images/calculator.png",
     title: "Calculator",
     detail: "A simple calculator.",
     tech: "HTML, CSS, JavaScript, jQuery",
     github: "https://nguyeud.github.io/calculator-app/",
   },
   {
-    image: "/images/sign-up-form.png",
+    image: "images/sign-up-form.png",
     title: "Sign-up Form",
     detail: "A dummy sign-up form with validation.",
     tech: "HTML, CSS, JavaScript, Bootstrap",
     github: "https://nguyeud.github.io/sign-up-form/",
   },
   {
-    image: "/images/library.png",
+    image: "images/library.png",
     title: "Library (WIP)",
     detail: "Add and track books in this library application to your local storage.",
     tech: "HTML, CSS, JavaScript, Bootstrap",
