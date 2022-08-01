@@ -20,19 +20,6 @@ a {
 }
 
 /* INTRO */
-#intro-img-left {
-    width: 40rem;
-    position: fixed;
-    left: 0;
-    opacity: .25;
-}
-#intro-img-right {
-    width: 40rem;
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
-    opacity: .25;
-}
 #intro-container {
     height: 100%;
     width: 100%;
