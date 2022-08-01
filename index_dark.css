@@ -113,6 +113,23 @@
     transition: background-color .5s; /* fade in */
 }
 
+/* PORTFOLIO */
+#portfolio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.portfolio {
+    width: 40%;
+    background-color: #aaa;
+}
+.portfolio-img {
+    width: 100%;
+    height: auto;
+}
+
 /* CONTACT */
 .btn-medium {
     margin: 2rem auto;

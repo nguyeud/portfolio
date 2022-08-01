@@ -104,3 +104,5 @@ window.addEventListener('load', (event) => {
     let details = workLibrary[0]["detail"];
     createWorkDetails(details);
 });
+
+// PORTFOLIO FUNCTION
