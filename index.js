@@ -45,7 +45,7 @@ const workLibrary = [
     ],
   },
   {
-    role: "Engineer Intern ",
+    role: "Engineering Intern ",
     work: "Rolls-Royce Solutions",
     date: "May 2017 - May 2018",
     detail: [
