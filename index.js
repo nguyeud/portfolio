@@ -4,7 +4,6 @@ const indexStyle = document.getElementById("index-style");
 const btnMode = document.getElementById("btn-darkToLight");
 
 btnMode.addEventListener("click", (e) => {
-  console.log(e.target.innerHTML);
   if(e.target.innerHTML == '<i class="fi fi-br-sun"></i>') {
     commonStyle.href = "style_light.css";
     indexStyle.href = "index_light.css";
@@ -12,8 +11,8 @@ btnMode.addEventListener("click", (e) => {
     console.log(indexStyle);
     e.target.innerHTML = '<i class="fi fi-rr-moon-stars"></i>';
   } else if(e.target.innerHTML == '<i class="fi fi-rr-moon-stars"></i>') {
-    commonStyle.href = "style.css";
-    indexStyle.href = "index.css";
+    commonStyle.href = "style_dark.css";
+    indexStyle.href = "index_dark.css";
     console.log(commonStyle);
     console.log(indexStyle);
     e.target.innerHTML = '<i class="fi fi-br-sun"></i>';
