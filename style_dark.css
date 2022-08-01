@@ -97,7 +97,7 @@ p {
     background-color: rgb(249, 213, 255);
     position: fixed;
     bottom: 0;
-    left: 10rem;
+    left: 5rem;
 }
 .footer-icon {
     font-size: 1.5rem;
@@ -110,17 +110,18 @@ p {
 #github {
     position: fixed;
     bottom: 11rem;
-    left: 9.4rem;
+    left: 4.4rem;
 }
 #linkedin {
     position: fixed;
     bottom: 14rem;
-    left: 9.5rem;
+    left: 4.5rem;
 }
 #footer-credits {
     position: fixed;
-    bottom: 1rem;
-    left: 12rem;
+    bottom: 6rem;
+    left: -3rem;
+    transform: rotate(270deg);
 }
 .footer-credit {
     font-size: 0.8rem;
