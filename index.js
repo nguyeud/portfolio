@@ -1,8 +1,30 @@
+// LIGHT MODE DARK MODE FUNCTION
+const commonStyle = document.getElementById("common-style");
+const indexStyle = document.getElementById("index-style");
+const btnMode = document.getElementById("btn-darkToLight");
+
+btnMode.addEventListener("click", (e) => {
+  console.log(e.target.innerHTML);
+  if(e.target.innerHTML == '<i class="fi fi-br-sun"></i>') {
+    commonStyle.href = "style_light.css";
+    indexStyle.href = "index_light.css";
+    console.log(commonStyle);
+    console.log(indexStyle);
+    e.target.innerHTML = '<i class="fi fi-rr-moon-stars"></i>';
+  } else if(e.target.innerHTML == '<i class="fi fi-rr-moon-stars"></i>') {
+    commonStyle.href = "style.css";
+    indexStyle.href = "index.css";
+    console.log(commonStyle);
+    console.log(indexStyle);
+    e.target.innerHTML = '<i class="fi fi-br-sun"></i>';
+  }
+})
+
+// EXPERIENCE FUNCTION
 const workPage = document.querySelectorAll(".experience-link");
 const workRole = document.getElementById("experience-role");
 const workDate = document.getElementById("experience-date");
 const workDetail = document.getElementById("experience-list");
-
 const workLibrary = [
   {
     role: "Engineer ",
@@ -44,7 +66,6 @@ const workLibrary = [
     ],
   },
 ];
-
 // create list of work details
 function createWorkDetails(details) {
     // removing all li tags before adding so there will be no duplicates
@@ -54,7 +75,6 @@ function createWorkDetails(details) {
         workDetail.insertAdjacentHTML("afterbegin", liDetail); // inserting or adding li insude ul tag
     })
 }
-
 // event listener for clicking on each work place pagination
 workPage.forEach((work) => {
   work.addEventListener("click", (e) => {
@@ -76,7 +96,6 @@ workPage.forEach((work) => {
     }
   });
 });
-
 window.addEventListener('load', (event) => {
     // load first work place pagination
     let spanDetail = `<span id="experience-place" class="bold-text">@ ${workLibrary[0]["work"]}</span>`;

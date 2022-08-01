@@ -1,0 +1,119 @@
+/* TYPOGRAPHY */
+.bold-text {
+    font-weight: 500;
+    color: rgb(255, 153, 200);
+}
+.section-header {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-bottom: 2px solid rgb(136, 136, 136);
+    margin-bottom: 1rem;
+}
+.section-text {
+    text-align: justify;
+    margin-bottom: .5rem;
+}
+
+/* INTRO */
+#intro-img-left {
+    width: 40rem;
+    position: fixed;
+    left: 0;
+    opacity: .25;
+}
+#intro-img-right {
+    width: 40rem;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    opacity: .25;
+}
+#intro-container {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+#intro-name {
+    font-family: 'Nunito', sans-serif;
+    font-size: 5.5rem;
+    font-weight: 600;
+    text-align: center;
+    background-color:rgb(240, 231, 219, .1);
+    border-radius: 1rem;
+}
+
+/* ABOUT */
+#about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+}
+#about-left-side {
+    width: 70%;
+}
+#about-right-side {
+    width: 30%;
+}
+#about-img {
+    width: 90%;
+    border-radius: 50%;
+    border: 2px solid rgb(136, 136, 136);
+}
+
+/* EXPERIENCE */
+#experience-container {
+    display: flex;
+    gap: 1rem;
+}
+#experience-where {
+    width: 30%;
+}
+#experience-where > ul > li {
+    padding: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: .9rem;
+    cursor: pointer;
+}
+#experience-info {
+    width: 70%;
+}
+#experience-header {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+}
+#experience-date {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: .5rem;
+}
+.show-bullet {
+    list-style-type: disc;
+    margin-left: 1rem;
+    padding: .25rem .25rem;
+}
+/* Pagination */
+.border-show {
+    border-left: 2px solid #aaa;
+}
+.border-active {
+    border-left: 2px solid rgb(156, 137, 184);
+    color: rgb(156, 137, 184);
+    background-color: rgb(156, 137, 184, .25);
+}
+.experience-link:hover {
+    color: rgb(156, 137, 184);
+    background-color: rgb(156, 137, 184, .25);
+    transition: background-color .5s; /* fade in */
+}
+
+/* CONTACT */
+.btn-medium {
+    margin: 2rem auto;
+}
