@@ -166,19 +166,15 @@ p {
     width: 1.5rem;
     height: auto;
 }
-#btn-darkToLight {
+#btn-theme {
     color: #fff;
     background-color: rgb(156, 137, 184);
     transition: background-color .5s; /* fade in */
     cursor: pointer;
     border: none;
 }
-#btn-darkToLight:hover {
+#btn-theme:hover {
     background-color: rgb(156, 137, 184, .5);
-}
-.fi-br-sun {
-    position: relative;
-    top: 2px;
 }
 .fi-rr-moon-stars {
     position: relative;

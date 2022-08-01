@@ -1,19 +1,19 @@
 // LIGHT MODE DARK MODE FUNCTION
-const commonStyle = document.getElementById("common-style");
-const indexStyle = document.getElementById("index-style");
-const btnMode = document.getElementById("btn-darkToLight");
+const darkStyle = document.getElementById("style-dark-mode");
+const darkIndex = document.getElementById("index-dark-mode");
+const btnTheme = document.getElementById("btn-theme");
 const logo = document.getElementById("nav-img");
 function colorTheme() {
-  if(btnMode.innerHTML == '<i class="fi fi-br-sun"></i>') {
-    commonStyle.href = "style_light.css";
-    indexStyle.href = "index_light.css";
+  if(btnTheme.innerHTML == '<i class="fi fi-br-sun"></i>') {
+    darkStyle.href = "";
+    darkIndex.href = "";
     logo.src = "images/logo_black.png";
-    btnMode.innerHTML = '<i class="fi fi-rr-moon-stars"></i>';
-  } else if(btnMode.innerHTML == '<i class="fi fi-rr-moon-stars"></i>') {
-    commonStyle.href = "style_dark.css";
-    indexStyle.href = "index_dark.css";
+    btnTheme.innerHTML = '<i class="fi fi-rr-moon-stars"></i>';
+  } else if(btnTheme.innerHTML == '<i class="fi fi-rr-moon-stars"></i>') {
+    darkStyle.href = "style_dark.css";
+    darkIndex.href = "index_dark.css";
     logo.src = "images/logo_white.png";
-    btnMode.innerHTML = '<i class="fi fi-br-sun"></i>';
+    btnTheme.innerHTML = '<i class="fi fi-br-sun"></i>';
   }
 }
 
