@@ -94,14 +94,75 @@ workPage.forEach((work) => {
     }
   });
 });
-window.addEventListener('load', (event) => {
-    // load first work place pagination
-    let spanDetail = `<span id="experience-place" class="bold-text">@ ${workLibrary[0]["work"]}</span>`;
-    workRole.innerText = workLibrary[0]["role"];
-    workRole.insertAdjacentHTML("beforeend", spanDetail);
-    workDate.innerText = workLibrary[0]["date"];
-    let details = workLibrary[0]["detail"];
-    createWorkDetails(details);
-});
 
 // PORTFOLIO FUNCTION
+const portfolioContainer = document.getElementById("portfolio-container");
+const portfolioLibrary = [
+  {
+    image: "/images/spark.png",
+    title: "Rock, Paper, Scissors",
+    detail: "A 5 round game against the computer.",
+    tech: "HTML, CSS, JavaScript"
+  },
+  {
+    image: "/images/spark.png",
+    title: "Etch-a-Sketch",
+    detail: "An online etch-a-sketch to draw on.",
+    tech: "HTML, CSS, JavaScript, jQuery"
+  },
+  {
+    image: "/images/spark.png",
+    title: "Calculator",
+    detail: "A simple calculator.",
+    tech: "HTML, CSS, JavaScript, jQuery"
+  },
+  {
+    image: "/images/spark.png",
+    title: "Sign-up Form",
+    detail: "A dummy sign-up form with validation.",
+    tech: "HTML, CSS, JavaScript, Bootstrap"
+  },
+  {
+    image: "/images/spark.png",
+    title: "Library",
+    detail: "Add and track books in this library application to your local storage.",
+    tech: "HTML, CSS, JavaScript, Bootstrap"
+  }
+]
+
+// create list of portfolio projects
+function createPortfolioProjects() {
+  for(let i = 0; i < portfolioLibrary.length; i++) {
+    let portfolioHTML = 
+    `<div class="portfolio">
+      <div class="portfolio-photo">
+        <img class="portfolio-img" src=${portfolioLibrary[i]["image"]}>
+      </div>
+      <div class="portfolio-title">
+        ${portfolioLibrary[i]["title"]}
+      </div>
+      <div class="portfolio-text">
+        ${portfolioLibrary[i]["detail"]}
+      </div>
+      <div class="portfolio-tech">
+        ${portfolioLibrary[i]["tech"]}
+      </div>
+    </div>`;
+    portfolioContainer.insertAdjacentHTML("afterbegin", portfolioHTML);
+  }
+
+}
+
+// ON WINDOW LOAD
+window.addEventListener('load', (event) => {
+  // load first work place pagination
+  let spanDetail = `<span id="experience-place" class="bold-text">@ ${workLibrary[0]["work"]}</span>`;
+  workRole.innerText = workLibrary[0]["role"];
+  workRole.insertAdjacentHTML("beforeend", spanDetail);
+  workDate.innerText = workLibrary[0]["date"];
+  let details = workLibrary[0]["detail"];
+  createWorkDetails(details);
+
+  // load portfolio projects
+  createPortfolioProjects();
+});
