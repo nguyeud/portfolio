@@ -141,4 +141,16 @@ a {
     #about-right-side {
         width: 100%;
     }
+    #main-experience {
+        width: 100%;
+    }
+    #experience-container {
+        flex-direction: column;
+    }
+    #experience-where {
+        width: 100%;
+    }
+    #experience-info {
+        width: 100%;
+    }
 }

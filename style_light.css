@@ -33,6 +33,9 @@ section {
     width: 40rem;
     margin-bottom: 2rem;
 }
+footer {
+    width: 100%
+}
 
 /* LINKS */
 a {
@@ -236,5 +239,33 @@ p {
     }
     #btn-media:hover {
         background-color: rgb(156, 137, 184, .25);
+    }
+    /* FOOTER */
+    #footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+    #footer-line {
+        display: none;
+    }
+    #github {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin: auto;
+    }
+    #linkedin {
+        position: relative;
+        bottom: auto;
+        left: auto;
+    }
+    #footer-credits {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: rotate(0deg);
     }
 }
