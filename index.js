@@ -153,7 +153,24 @@ function createPortfolioProjects() {
     </div>`;
     portfolioContainer.insertAdjacentHTML("afterbegin", portfolioHTML);
   }
+}
 
+// MOBILE NAVBAR
+let mobileNav = document.getElementById("nav-mobile");
+const mediaBtn = document.getElementById("btn-media");
+function showMobileNav() {
+  mobileNav = document.getElementById("nav-mobile");
+  if(mobileNav.style.display == "block") {
+    mobileNav.style.display = "none";
+  } else {
+    mobileNav.style.display = "block";
+  }
+}
+// if window size > 768, set display of mobile nav bar to none
+window.onresize = function() {
+  if(window.innerWidth >= 769) {
+    mobileNav.style.display = "none";
+  }
 }
 
 // ON WINDOW LOAD

@@ -90,6 +90,21 @@ p {
     align-items: center;
     gap: 2rem;
 }
+#nav-mobile {
+    display: none;
+    position: fixed;
+    top: 4rem;
+    right: 4rem;
+    font-size: 1.4rem;
+    background-color: #fff;
+    border-radius: .75rem;
+    width: 12rem;
+    padding: 1rem;
+    box-shadow: .1rem .1rem .4rem rgb(136, 136, 136, .2);   
+}
+#nav-mobile > .nav-links > .nav-link {
+    font-size: 1.2rem;
+}
 
 /* FOOTER */
 #footer-line {
@@ -135,9 +150,10 @@ p {
 .btn {
     font-family: 'Roboto', sans-serif;
     color: #333;
-    background-color: trasparent;
+    background-color: transparent;
     border: 1px solid rgb(156, 137, 184);
     transition: background-color .5s; /* fade in */
+    cursor: pointer;
 }
 .btn:hover {
     background-color: rgb(156, 137, 184, .25);
@@ -166,6 +182,10 @@ p {
     width: 1.5rem;
     height: auto;
 }
+#btn-media {
+    display: none;
+    background-color: transparent;
+}
 #btn-theme {
     color: #fff;
     background-color: rgb(156, 137, 184);
@@ -176,7 +196,7 @@ p {
 #btn-theme:hover {
     background-color: rgb(156, 137, 184, .5);
 }
-.fi-rr-moon-stars {
+.fi-rr-moon-stars, .fi-rr-menu-burger, .fi-br-sun {
     position: relative;
     top: 2px;
 }
@@ -189,4 +209,32 @@ p {
     background: rgb(240, 231, 219, .5);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);    
+}
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+    main {
+        padding: 0 4rem;
+    }
+    nav {
+        width: 100%;
+    }
+    section {
+        max-width: 40rem;
+        width: auto;
+    }
+    /* NAV */
+    #nav-links {
+        gap: 1rem;
+    }
+    #nav-links > .nav-links > .nav-link {
+        display: none;
+    }
+    /* BUTTONS */
+    #btn-media {
+        display: inline-block;
+    }
+    #btn-media:hover {
+        background-color: rgb(156, 137, 184, .25);
+    }
 }

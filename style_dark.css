@@ -13,6 +13,10 @@ body {
 .nav-link:hover {
     border-bottom: 2px solid rgb(249, 213, 255);
 }
+#nav-mobile {
+    background-color: rgb(32, 32, 35);
+    box-shadow: .1rem .1rem .4rem rgb(255, 255, 255, .2); 
+}
 
 /* FOOTER */
 #footer-line {
@@ -42,10 +46,6 @@ body {
 }
 #btn-theme:hover {
     background-color: rgb(246, 173, 85);
-}
-.fi-br-sun {
-    position: relative;
-    top: 2px;
 }
 
 /* UTILITIES */

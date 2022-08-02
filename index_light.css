@@ -46,10 +46,10 @@ a {
     width: 100%;
     gap: 3rem;
 }
-#about-left-side {
+#about-right-side {
     width: 70%;
 }
-#about-right-side {
+#about-left-side {
     width: 30%;
 }
 #about-img {
@@ -112,7 +112,7 @@ a {
     gap: 1rem;
 }
 .portfolio {
-    width: 45%;
+    width: 240px;
     background-color: rgb(136, 136, 136, .1);
     padding: .5rem;
     border-radius: .5rem;
@@ -130,4 +130,15 @@ a {
 /* CONTACT */
 .btn-medium {
     margin: 2rem auto;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+    #about-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #about-right-side {
+        width: 100%;
+    }
 }
