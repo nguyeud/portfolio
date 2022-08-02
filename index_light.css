@@ -36,6 +36,7 @@ a {
     text-align: center;
     background-color:rgb(136, 136, 136, .1);
     border-radius: 1rem;
+    padding: 1rem 1rem;
 }
 
 /* ABOUT */
@@ -138,19 +139,13 @@ a {
         flex-direction: column;
         gap: 1rem;
     }
-    #about-right-side {
-        width: 100%;
+    #about-left-side {
+        width: 155.2px;
     }
-    #main-experience {
+    #abt-img, #about-right-side, #main-experience, #experience-where, #experience-info {
         width: 100%;
     }
     #experience-container {
         flex-direction: column;
-    }
-    #experience-where {
-        width: 100%;
-    }
-    #experience-info {
-        width: 100%;
     }
 }
