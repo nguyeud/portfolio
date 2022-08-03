@@ -54,7 +54,7 @@ const workLibrary = [
     ],
   },
   {
-    role: "Gradute ",
+    role: "Graduate ",
     work: "University of Michigan",
     date: "Sept 2014 - Dec 2019",
     detail: [
