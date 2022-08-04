@@ -100,7 +100,7 @@ const portfolioLibrary = [
   {
     image: "images/rps.png",
     title: "Rock, Paper, Scissors",
-    detail: "A 5 round game against the computer.",
+    detail: "First to five rounds wins in a game of rock, paper, scissors against a computer.",
     tech: "HTML, CSS, JavaScript",
     github: "https://nguyeud.github.io/rock-paper-scissor-game/",
   },
@@ -114,7 +114,7 @@ const portfolioLibrary = [
   {
     image: "images/calculator.png",
     title: "Calculator",
-    detail: "A simple calculator.",
+    detail: "A simple calculator to add, subtract, multiply, and divide.",
     tech: "HTML, CSS, JavaScript, jQuery",
     github: "https://nguyeud.github.io/calculator-app/",
   },
