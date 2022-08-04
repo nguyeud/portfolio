@@ -103,6 +103,7 @@ const portfolioLibrary = [
     detail: "First to five rounds wins in a game of rock, paper, scissors against a computer.",
     tech: "HTML, CSS, JavaScript",
     github: "https://nguyeud.github.io/rock-paper-scissor-game/",
+    repo: "https://github.com/nguyeud/rock-paper-scissor-game"
   },
   {
     image: "images/etch-a-sketch.png",
@@ -110,6 +111,7 @@ const portfolioLibrary = [
     detail: "An online etch-a-sketch to draw on.",
     tech: "HTML, CSS, JavaScript, jQuery",
     github: "https://nguyeud.github.io/etch-a-sketch-app/",
+    repo: "https://github.com/nguyeud/etch-a-sketch-app"
   },
   {
     image: "images/calculator.png",
@@ -117,6 +119,7 @@ const portfolioLibrary = [
     detail: "A simple calculator to add, subtract, multiply, and divide.",
     tech: "HTML, CSS, JavaScript, jQuery",
     github: "https://nguyeud.github.io/calculator-app/",
+    repo: "https://github.com/nguyeud/calculator-app"
   },
   {
     image: "images/sign-up-form.png",
@@ -124,6 +127,7 @@ const portfolioLibrary = [
     detail: "A dummy sign-up form with validation.",
     tech: "HTML, CSS, JavaScript, Bootstrap",
     github: "https://nguyeud.github.io/sign-up-form/",
+    repo: "https://github.com/nguyeud/sign-up-form"
   },
   {
     image: "images/library.png",
@@ -131,6 +135,7 @@ const portfolioLibrary = [
     detail: "Add and track books in this library application to your local storage.",
     tech: "HTML, CSS, JavaScript, Bootstrap",
     github: "https://nguyeud.github.io/library-app/",
+    repo: "https://github.com/nguyeud/library-app"
   }
 ]
 // create list of portfolio projects
@@ -148,7 +153,10 @@ function createPortfolioProjects() {
         ${portfolioLibrary[i]["detail"]}
       </div>
       <div class="portfolio-tech tech-stack">
-        ${portfolioLibrary[i]["tech"]} (<a class="portfolio-link" href=${portfolioLibrary[i]["github"]}>GitHub<a>)
+        ${portfolioLibrary[i]["tech"]}
+      </div>
+      <div class="portfolio-tech links">
+        <a class="portfolio-link" href=${portfolioLibrary[i]["github"]}>Live</a> | <a class="portfolio-link" href=${portfolioLibrary[i]["repo"]}>Repo</a>
       </div>
     </div>`;
     portfolioContainer.insertAdjacentHTML("afterbegin", portfolioHTML);
