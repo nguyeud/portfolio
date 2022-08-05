@@ -131,7 +131,7 @@ const portfolioLibrary = [
   },
   {
     image: "images/library.png",
-    title: "Library (WIP)",
+    title: "Library",
     detail: "Add and track books in this library application to your local storage.",
     tech: "HTML, CSS, JavaScript, Bootstrap",
     github: "https://nguyeud.github.io/library-app/",
